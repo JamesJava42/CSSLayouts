@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        
+        
+
+       
+    }
+    .box >  div{
+        display: grid;
+        border: 3px solid maroon;
+        background-color: aqua;
+        padding: 35px;
+        
+
+       
+        
+    }
+    .box >.b1{
+      grid-column: span 2;
+    }
+    .box .b4{
+        grid-column-start: 2;
+    }
+    .box .b6{
+        grid-row: 5;
+    }
+   
+</style>
+<body>
+    <div>
+        <div>
+            <div class="box">
+                <div class="b1">One</div>
+                <div >Two</div>
+                <div >Three</div>
+                <div class="b4">Four</div>
+                <div >Five</div>
+                <div class="b6">Six</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

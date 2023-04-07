@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        column-gap: 15px;
+
+       
+       
+    }
+    div > *{
+       
+        /* border: 2px solid lightgreen; */
+        display: grid;
+       
+       
+       
+    }
+     .box div{
+        border: 2px solid rebeccapurple;
+        column-gap: 15px;
+        border-radius: 5px;
+        padding: 35px;
+        background-color: aquamarine;
+     }
+     .box .box2{
+        background-color: antiquewhite;
+        position: absolute;
+        left: 28%;
+        top: 10%;
+        padding-right: 30%;
+        padding-bottom: 10%;
+     }
+</style>
+<body>
+
+    <div>
+        <div class="box">
+            <div>One</div>
+            <div class="box2">Two</div>
+        </div>
+    </div>
+    
+</body>
+</html>

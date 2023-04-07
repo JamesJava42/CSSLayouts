@@ -1,0 +1,21 @@
+CSS grid Layout intraduced the 2-D grid systems. 
+Grid: 
+    Basically it is a set of intersecting horizontal and vertical lines defining Col and row.
+    Fixed and flexible track-sizes with percentages or 'fr' unit for this purpose.
+    Item placement: can place items in to a precise location on the grid using the ;ine numbers/names/targeted area of the grid.
+    Creation of additional tracts to hold content: we can define a explicit grid with the grid lay-out
+    Aligninement controle: how the items aligned and grid to be aligned.
+    controle of overlaping cotent: We can partially overlap each-others controlled by 'z-index'.It combines the flexBox.
+Grid Container:
+     we create a contaner by specifying the div class with display: grid/ display: inline-grid property. - all the direct elements comes to a grid childrens/items.
+Grid tracks:
+     we define the grid rows and coloms using the grid-template-columns and grid-template-rows properties.
+    grid track is space between the any 2 adj line on the grid.
+    the 'fr' unit we use the fr insted of px.
+Track-Sizing and minmax:
+    I want to set the same size to all grid items and then if it data inreess the we can shrink unless we fix te min grid item size.
+    grid-auto-rows: minmax(10px,auto)
+
+grid lining :
+   we can span the ros and colms in table just like we mark the rows and colums count and span with 
+   grid-column-start , grid-column-end; which occupyt he item in entire space. similar to row

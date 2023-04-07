@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .task1{
+        display: grid;
+        grid-template-columns: 25fr 25fr 25fr;
+        padding: 5px;
+        column-gap: 25px;
+        row-gap: 25px;
+        
+        
+
+    }
+    .task1 > *{
+        border: 3px solid violet;
+        border-radius: 5px;
+        background-color: aqua;
+        
+    }
+    div {
+        padding: 35px;
+        grid-column: 1/4;
+    }
+    
+    
+</style>
+<body>
+    <div>
+        <div class="task1">
+            <div class="b1">Box1</div>
+            <div class="b2">Box2</div>
+            <div class="b3">Box3</div>
+            <div>Box4</div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+.grid1 > *{
+    display: grid;
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+    
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 200px 200px ; /* here i we add pixels by spaces those colums are created andthe data like items are listed in these colums based on the px*/
+    /* above can also rite as */
+    grid-template-columns: repeat(3,2fr) ;
+    grid-template-columns: 2fr 1fr; /* we are make the spaces by doubleing the count on each colum*/
+    /* grid-template-rows: 200px 200px 200px;  */
+    grid-template-rows: 2fr 2fr 2fr; 
+    
+
+}
+.grid1 *{
+    grid-template-rows: minmax(50px,auto);
+}
+.line > *{
+   display: grid;
+  
+   border-color: 3px #f76707;
+   
+   border-radius: 5px;
+   background-color: bisque;
+   color: #333;
+   
+   
+    
+   
+}
+.line{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-auto-rows: minmax(50px,auto);
+    
+
+}
+.box1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}

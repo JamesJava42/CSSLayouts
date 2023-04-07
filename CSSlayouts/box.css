@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+.box{
+    display: inline-block;
+    width: 50px;
+    height: 130px;
+    background-color: blanchedalmond;
+    color: red;
+}
+
+#one{
+    position: fixed;
+    left: 180px;
+    bottom: 250px;
+
+}
+#three{
+    position: static;
+    /* bottom: 85px;
+    left: 400px; */
+    /* for static the property are not affect */
+}
+#four{
+    position: relative;
+    bottom: -123px;
+    left: -50px;
+    /* the properties are working in opt way like bottom mives to up and left mves to right */
+
+}
+#five{
+    position: absolute;
+    right: 150px;
+    top: 30px;
+}
+#six{
+    position: sticky;
+
+    left: 300px;
+    top: 300px;
+    bottom: 400px
+    ;
+}
+.col{
+    /* column-count: 3;
+    column-gap: 4px;
+    color: blue;
+    column-width: 20px;
+    
+    overflow: scroll;
+    font-size: 20px; */
+    
+    column-gap: 5px;
+    column-count: 3;
+    column-rule-style: dashed;
+    column-rule-color: pink;
+    column-rule-width: 10px;
+    column-fill: balance;  
+    
+    overflow: scroll;
+}
+.span{
+    column-span: all;
+    background-clip: border-box;
+    background-color: aqua;
+}
+.figure{
+    max-width: 100%;
+    break-inside: avoid; /*telling to not seperate te image with text inside it*/
+}
+
+/* Using Queries @supports(property) */
+.support{
+    color: blue;
+}
+@supports(gap : 5px){
+    .support{
+        color: red;
+    }
+}
