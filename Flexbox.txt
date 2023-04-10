@@ -1,0 +1,26 @@
+In past, creating layouts, we use features like floats and positioning. but with limited and more complexing.
+Like difficulty,
+     Making vertically centering a block of content inside its parent.
+     Making all the children of a container take up an "EQUAL" amount od width/height, regardless how much width  its evailable.
+     Making all colums in a multi-column lay-outadopt the same height even if they contatin diff amount of content.
+
+Flex-> makes a lot easier for lay-out tasks.
+want to place in the parent element with display property as flex(display: flex;) -> act as block level element 
+    main-axis-- main start, main end, cross-axis cross start cross end,
+    flex-direction: column
+    flex-wrap: wrap 
+    flex: 200px;(wide set to each children)
+
+    flex-flow: <direction><wrap> | row wrap
+
+    artice:nth-of-type(3){ flex: 2;}  --> the 3rth element take the twice size of other elements.
+
+    flex-grow, flex-shrink -- how uch shrink to prevent the overflow, flex-basis  -- min sizevalue.
+    align-items: (make elemnts to sit on te cross-axis) -- flex-start, flex-end
+    justify-content: (setting the flow of the elements. sit n thte main-axis)
+
+Ordering(order:) :
+                 default all the flext items have default order value is 0.
+                we can set the order values to each items so that change in the appearnce make a change.
+                we can also use the negative ordering to make it display first in the main axis.
+                
